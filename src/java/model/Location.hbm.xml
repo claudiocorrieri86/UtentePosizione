@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19-mag-2018 17.12.55 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Location" table="location" catalog="hresc" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="uid" type="java.lang.Integer">
+            <column name="uid" />
+        </property>
+        <property name="lat" type="java.lang.Double">
+            <column name="lat" precision="22" scale="0" />
+        </property>
+        <property name="lng" type="java.lang.Double">
+            <column name="lng" precision="22" scale="0" />
+        </property>
+        <property name="insdate" type="string">
+            <column name="insdate" length="16" />
+        </property>
+    </class>
+</hibernate-mapping>
